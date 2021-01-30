@@ -2,6 +2,8 @@
 
 An app, that consume the Open Weather API, to show the weather of the current device location based on coordenates.
 
+![alt text](https://github.com/yurisamagaia/weather/blob/master/ios_image.png?raw=true)
+
 ### Technologies
 - React Native
 - TypeScript
