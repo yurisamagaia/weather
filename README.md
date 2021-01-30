@@ -1,11 +1,11 @@
 # Weather APP
 
-An app, that consume the Open Weather API, to show the weather condition based on the current location of the device using coordenates.
+An app, that consume the Open Weather API, to show the weather condition based on the current location of the device using coordinates.
 
 ![alt text](https://github.com/yurisamagaia/weather/blob/master/assets/ios_image.png)
 ![alt text](https://github.com/yurisamagaia/weather/blob/master/assets/android_image.png)
 
-### Technologies
+## Technologies
 - React Native
 - TypeScript
 - Redux - Redux Thunk - Redux Logger
@@ -13,20 +13,15 @@ An app, that consume the Open Weather API, to show the weather condition based o
 - Jest
 - Hooks
 
-### Installing
+## Build Setup
 
-```sh
+``` bash
+# install dependencies
 yarn install
-```
 
-### Running
-
-```sh
+# runnning app
 yarn start
-```
 
-### Test
-
-```sh
+# runnning tests
 yarn test
 ```
