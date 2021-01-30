@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFF",
+            "fontSize": 22,
+          },
+        ]
+      }
+    >
+      Angra dos Reis
+       - 
+      BR
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+          },
+        ]
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://openweathermap.org/img/wn/03d@4x.png",
+          }
+        }
+        style={
+          Object {
+            "height": 180,
+            "width": 180,
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFF",
+            "fontSize": 50,
+          },
+        ]
+      }
+    >
+      28
+      °
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFF",
+            "fontSize": 22,
+            "paddingBottom": 10,
+          },
+        ]
+      }
+    >
+      Clouds
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFF",
+            "fontSize": 20,
+            "fontStyle": "italic",
+            "marginTop": 10,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      It's a good day to be outside, but be careful, there are some clouds.
+    </Text>
+  </View>
+</View>
+`;
