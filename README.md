@@ -2,7 +2,7 @@
 
 An app, that consume the Open Weather API, to show the weather of the current device location based on coordenates.
 
-![alt text](https://github.com/yurisamagaia/weather/blob/master/assets/android_ios.png)
+![alt text](https://github.com/yurisamagaia/weather/blob/master/assets/ios_image.png)
 ![alt text](https://github.com/yurisamagaia/weather/blob/master/assets/android_image.png)
 
 ### Technologies
