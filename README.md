@@ -16,12 +16,12 @@ An app, that consume the Open Weather API, to show the weather condition based o
 ## Build Setup
 
 ``` bash
-# install dependencies
+# Install dependencies
 yarn install
 
-# runnning app
+# Running app
 yarn start
 
-# runnning tests
+# Running tests
 yarn test
 ```
