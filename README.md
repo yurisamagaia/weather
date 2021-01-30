@@ -19,7 +19,7 @@ An app, that consume the Open Weather API, to show the weather condition based o
 # Install dependencies
 yarn install
 
-# Running app
+# Running APP
 yarn start
 
 # Running tests
