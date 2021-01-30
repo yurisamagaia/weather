@@ -1,0 +1,7 @@
+// Define constants
+export const FETCH_WEATHER_REQUEST = 'FETCH_WEATHER_REQUEST';
+export const FETCH_WEATHER_SUCCESS = 'FETCH_WEATHER_SUCCESS';
+export const FETCH_WEATHER_ERROR = 'FETCH_WEATHER_ERROR';
+
+// Set KEY of open weather API
+export const APIKEY = "619a1c45623c22b5809e493e4809b14d";
