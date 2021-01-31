@@ -12,8 +12,7 @@ import {
   Title,
   ContentFlex,
   Temperature,
-  TextCondition,
-  ContainerTextCondition
+  TextCondition
 } from './style';
 
 type Props = {
@@ -24,7 +23,6 @@ const Weather: FC<Props> = ({ data }) => (
   <Container>
     <Content>
       <TextCity>{data.city} - {data.country}</TextCity>
-      
       <ContentFlex>
         <Content>
           <Temperature>{Math.round(data.temperature)}°</Temperature>
@@ -41,14 +39,14 @@ const Weather: FC<Props> = ({ data }) => (
         </IconContainer>
       </ContentFlex>
     </Content>
-      <ContainerTextCondition>
-        <Title>{data.title}</Title>
-        <TextCondition>Feels like: {Math.round(data.feels_like)}°</TextCondition>
-        <TextCondition>Wind: {convertMetersToKm(data.wind)}km/h</TextCondition>
-        <TextCondition>Humidity: {data.humidity}%</TextCondition>
-        <TextCondition>Pressure: {data.pressure}hPa</TextCondition>
-      </ContainerTextCondition>
-      <TextDescription>{getWeatherKinds(data.kind)}</TextDescription>
+    <Content>
+      <Title>{data.title}</Title>
+      <TextCondition>Feels like: {Math.round(data.feels_like)}°</TextCondition>
+      <TextCondition>Wind: {convertMetersToKm(data.wind)}km/h</TextCondition>
+      <TextCondition>Humidity: {data.humidity}%</TextCondition>
+      <TextCondition>Pressure: {data.pressure}hPa</TextCondition>
+    </Content>
+    <TextDescription>{getWeatherKinds(data.kind)}</TextDescription>
   </Container>
 );
 
