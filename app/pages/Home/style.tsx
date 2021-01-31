@@ -5,7 +5,7 @@ import { colors } from '../../theme';
 export const Container = styled.View`
   flex: 1;
   background-color: ${colors.blue};
-  padding: 40px 15px;
+  padding: 45px 15px 30px 15px;
 `;
 
 export const Content = styled.View`

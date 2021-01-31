@@ -37,7 +37,7 @@ exports[`Button tests Simulator onClick instead of onPress 1`] = `
     style={
       Array [
         Object {
-          "color": "#00BFFF",
+          "color": "#1E90FF",
           "fontSize": 20,
           "fontWeight": "bold",
         },

@@ -35,3 +35,5 @@ export const getWeatherKinds = (kind: string): string => {
         return MESSAGES.CLOUDS;
     }
 };
+
+export const convertMetersToKm = (metersHour: number): string => (metersHour * 3.6).toFixed(0);

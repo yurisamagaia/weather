@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Image } from 'react-native'
-import { getWeatherKinds } from '../../utils/kinds';
+import { getWeatherKinds, convertMetersToKm } from '../../utils/kinds';
 import { WeatherData } from '../../store/actions/types'
 import {
   Container,
@@ -9,7 +9,11 @@ import {
   TextCity,
   TextTemp,
   TextDescription,
-  Title
+  Title,
+  ContentFlex,
+  Temperature,
+  TextCondition,
+  ContainerTextCondition
 } from './style';
 
 type Props = {
@@ -19,17 +23,32 @@ type Props = {
 const Weather: FC<Props> = ({ data }) => (
   <Container>
     <Content>
-        <TextCity>{data.city} - {data.country}</TextCity>
-      <IconContainer>
-        <Image
-          source={{ uri: 'https://openweathermap.org/img/wn/' + data.icon + '@4x.png' }}
-          style={{ width: 180, height: 180 }}
-        />
-      </IconContainer>
-      <TextTemp>{Math.round(data.temperature)}°</TextTemp>
-      <Title>{data.title}</Title>
-      <TextDescription>{getWeatherKinds(data.kind)}</TextDescription>
+      <TextCity>{data.city} - {data.country}</TextCity>
+      
+      <ContentFlex>
+        <Content>
+          <Temperature>{Math.round(data.temperature)}°</Temperature>
+          <ContentFlex>
+            <TextTemp>H: {Math.round(data.temp_max)}°</TextTemp>
+            <TextTemp>L: {Math.round(data.temp_min)}°</TextTemp>
+          </ContentFlex>
+        </Content>
+        <IconContainer>
+          <Image
+            source={{ uri: 'https://openweathermap.org/img/wn/' + data.icon + '@4x.png' }}
+            style={{ width: 200, height: 200 }}
+          />
+        </IconContainer>
+      </ContentFlex>
     </Content>
+      <ContainerTextCondition>
+        <Title>{data.title}</Title>
+        <TextCondition>Feels like: {Math.round(data.feels_like)}°</TextCondition>
+        <TextCondition>Wind: {convertMetersToKm(data.wind)}km/h</TextCondition>
+        <TextCondition>Humidity: {data.humidity}%</TextCondition>
+        <TextCondition>Pressure: {data.pressure}hPa</TextCondition>
+      </ContainerTextCondition>
+      <TextDescription>{getWeatherKinds(data.kind)}</TextDescription>
   </Container>
 );
 
