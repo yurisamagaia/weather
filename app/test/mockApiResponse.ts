@@ -19,7 +19,8 @@ const mockApiResponse = {
       country: 'BR',
     },
     wind: {
-      speed: 4
+      speed: 4,
+      deg: 130
     }
   };
   

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Image } from 'react-native'
-import { getWeatherKinds, convertMetersToKm } from '../../utils/kinds';
+import { getWeatherKinds, convertMetersToKm, convertDegToCompass } from '../../utils/kinds';
 import { WeatherData } from '../../store/actions/types'
 import {
   Container,
@@ -42,7 +42,7 @@ const Weather: FC<Props> = ({ data }) => (
     <Content>
       <Title>{data.title}</Title>
       <TextCondition>Feels like: {Math.round(data.feels_like)}°</TextCondition>
-      <TextCondition>Wind: {convertMetersToKm(data.wind)}km/h</TextCondition>
+      <TextCondition>Wind: {convertMetersToKm(data.wind)}km/h {convertDegToCompass(data.deg)}</TextCondition>
       <TextCondition>Humidity: {data.humidity}%</TextCondition>
       <TextCondition>Pressure: {data.pressure}hPa</TextCondition>
     </Content>

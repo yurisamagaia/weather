@@ -189,7 +189,8 @@ exports[`Should render correctly 1`] = `
     >
       Wind: 
       14
-      km/h
+      km/h 
+      SE
     </Text>
     <Text
       style={

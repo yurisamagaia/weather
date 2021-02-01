@@ -17,6 +17,7 @@ export interface WeatherData {
   humidity: number;
   pressure: number;
   wind: number;
+  deg: number;
   city: string;
   country: string;
 }

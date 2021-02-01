@@ -1,7 +1,15 @@
+export const convertDegToCompass = (num: number): string => {
+  var val = Math.floor((num / 22.5) + 0.5);
+  var arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+  return arr[(val % 16)];
+}
+
+export const convertMetersToKm = (metersHour: number): string => (metersHour * 3.6).toFixed(0);
+
 const MESSAGES = {
     FEW_CLOUDS: "It's a good day to be outside, but be careful, there are some clouds.",
     CLOUDS: "It's a good day to be outside, but be careful, there are some clouds. Better to take an umbrella",
-    CLEAR_SKY: "A perfect day to be outside and do your activities. Don't forget the sunscreen!",
+    CLEAR_SKY: "A perfect day to be outside and do your activities.",
     MIST: "There is fog outside. Be careful if you'll drive!",
     THUNDERSTOM: 'Be careful! There is a thunderstorm.',
     RAIN: "Don't forget your umbrella. It's raining!",
@@ -35,5 +43,3 @@ export const getWeatherKinds = (kind: string): string => {
         return MESSAGES.CLOUDS;
     }
 };
-
-export const convertMetersToKm = (metersHour: number): string => (metersHour * 3.6).toFixed(0);

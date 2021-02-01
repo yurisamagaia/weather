@@ -47,6 +47,7 @@ export const fetchWeather = (lat: number, lon: number): AppThunk => {
           humidity: data.main.humidity,
           pressure: data.main.pressure,
           wind: data.wind.speed,
+          deg: data.wind.deg,
           city: data.name,
           country: data.sys.country,
         };

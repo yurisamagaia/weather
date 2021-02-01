@@ -2,7 +2,7 @@ import fetch from 'jest-fetch-mock';
 import mockStore from '../../test/mockStore';
 import mockApiResponse from '../../test/mockApiResponse';
 import { fetchWeather } from '../../store/actions';
-import { FETCH_WEATHER_SUCCESS, FETCH_WEATHER_REQUEST, FETCH_WEATHER_ERROR } from '../../store/consts';
+import { FETCH_WEATHER_SUCCESS, FETCH_WEATHER_REQUEST } from '../../store/consts';
 import weatherReducer from '../../store/reducers';
 import { WeatherData, Coordinates } from '../../store/actions/types';
 
@@ -23,7 +23,8 @@ const mockedWeather: WeatherData = {
   feels_like: 29,
   humidity: 72,
   pressure: 1003,
-  wind: 4
+  wind: 4,
+  deg: 130
 };
 
 describe('Home tests', () => {

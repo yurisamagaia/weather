@@ -15,7 +15,8 @@ test('Should render correctly', async () => {
     feels_like: 29,
     humidity: 72,
     pressure: 1003,
-    wind: 4
+    wind: 4,
+    deg: 130
   };
   const component = renderer.create(<Weather data={weather} />);
   const tree = component.toJSON();
