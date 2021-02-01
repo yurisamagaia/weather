@@ -8,6 +8,7 @@ exports[`Should render correctly 1`] = `
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
+        "width": "100%",
       },
     ]
   }
@@ -152,7 +153,7 @@ exports[`Should render correctly 1`] = `
           Object {
             "color": "#FFF",
             "fontSize": 26,
-            "paddingBottom": 10,
+            "paddingBottom": 5,
           },
         ]
       }
@@ -188,9 +189,10 @@ exports[`Should render correctly 1`] = `
       }
     >
       Wind: 
-      14
-      km/h 
       SE
+       
+      14
+       km/h
     </Text>
     <Text
       style={
@@ -222,7 +224,7 @@ exports[`Should render correctly 1`] = `
     >
       Pressure: 
       1003
-      hPa
+       hPa
     </Text>
   </View>
   <Text
