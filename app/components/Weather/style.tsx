@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 import { colors } from '../../theme';
 
 export const Container = styled.View`
+  width: 100%;
   flex: 1;
 `;
 
@@ -54,5 +55,5 @@ export const TextDescription = styled.Text`
 export const Title = styled.Text`
   font-size: 26px;
   color: ${colors.white};
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 `;

@@ -42,9 +42,9 @@ const Weather: FC<Props> = ({ data }) => (
     <Content>
       <Title>{data.title}</Title>
       <TextCondition>Feels like: {Math.round(data.feels_like)}°</TextCondition>
-      <TextCondition>Wind: {convertMetersToKm(data.wind)}km/h {convertDegToCompass(data.deg)}</TextCondition>
+      <TextCondition>Wind: {convertDegToCompass(data.deg)} {convertMetersToKm(data.wind)} km/h</TextCondition>
       <TextCondition>Humidity: {data.humidity}%</TextCondition>
-      <TextCondition>Pressure: {data.pressure}hPa</TextCondition>
+      <TextCondition>Pressure: {data.pressure} hPa</TextCondition>
     </Content>
     <TextDescription>{getWeatherKinds(data.kind)}</TextDescription>
   </Container>
